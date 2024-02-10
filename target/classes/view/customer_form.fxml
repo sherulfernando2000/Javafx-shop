@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icon/img.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="39.0" prefHeight="58.0" prefWidth="220.0" text="Customer" textFill="#cfc4c4">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField layoutX="14.0" layoutY="142.0" prefHeight="50.0" prefWidth="230.0" promptText="id" />
+      <TextField layoutX="344.0" layoutY="142.0" prefHeight="50.0" prefWidth="230.0" promptText="name" />
+      <TextField layoutX="14.0" layoutY="275.0" prefHeight="50.0" prefWidth="230.0" promptText="address" />
+      <TextField layoutX="344.0" layoutY="275.0" prefHeight="50.0" prefWidth="230.0" promptText="tel" />
+      <JFXButton layoutX="358.0" layoutY="472.0" prefHeight="50.0" prefWidth="94.0" style="-fx-background-color: ADBC9F;" text="clear" textFill="#1b1616">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="479.0" layoutY="472.0" prefHeight="50.0" prefWidth="94.0" style="-fx-background-color: ADBC9F;" text="Save" textFill="#1b1616">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

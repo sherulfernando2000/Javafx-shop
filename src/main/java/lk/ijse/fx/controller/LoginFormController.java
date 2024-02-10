@@ -2,6 +2,7 @@ package lk.ijse.fx.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -24,10 +25,16 @@ public class LoginFormController {
         if(userName.equals(CredentialDb.USERNAME) && pw.equals(CredentialDb.PW)) {
             // navigate to the sample form
             //load scene graph to our java method
-            AnchorPane rootNode = FXMLLoader.load(this.getClass().getResource("/view/main_form.fxml"));
+           FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/main_form.fxml"));
+            Parent load = fxmlLoader.load();
+            MainFormController controller = fxmlLoader.getController();
+            controller.setUserName(userName);
+
+
+
 
             //set a scene to the scene graph
-            Scene scene = new Scene(rootNode);
+            Scene scene = new Scene(load);
 
             // get the primary stage from login actors
             Stage stage = (Stage) this.rootNode.getScene().getWindow();

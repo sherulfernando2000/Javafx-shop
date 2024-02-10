@@ -44,7 +44,6 @@
             <Image url="@../icon/avatar.png" />
          </image>
       </ImageView>
-      <TextField alignment="CENTER" layoutX="15.0" layoutY="171.0" prefHeight="24.0" prefWidth="174.0" />
       <JFXButton layoutX="-1.0" layoutY="223.0" onAction="#btnDashBordOnAction" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: ADBC9F;" text="DashBoard" textFill="#12372a">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -85,5 +84,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
+      <Label fx:id="lblUserName" alignment="CENTER" layoutX="31.0" layoutY="171.0" prefHeight="26.0" prefWidth="150.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
